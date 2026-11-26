@@ -5,7 +5,7 @@
 // codes against at the door on December 3.
 const FORM_ENDPOINT = "";
 
-// Protest start, New York time (EST = UTC-5). Change the time when it's set.
+// Protest start: Union Square, NYC — Dec 3, 12:00 PM New York time (EST = UTC-5).
 const PROTEST_START = new Date("2026-12-03T12:00:00-05:00");
 // ======================
 
