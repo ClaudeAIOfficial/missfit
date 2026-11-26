@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MISFITS — They call it a scam. We call it home.</title>
-<meta name="description" content="Misfits is a movement against the stigma of being in crypto. Normies call us scammers. We call ourselves misfits.">
-<meta property="og:title" content="MISFITS — They call it a scam. We call it home.">
-<meta property="og:description" content="A protest against the crypto stigma. Get on the Wall.">
+<title>MISFITS — First protest · NYC · December 3</title>
+<meta name="description" content="They call crypto a scam. On December 3 the misfits take New York. Sign up, get your code, show up.">
+<meta property="og:title" content="MISFITS — First protest · NYC · December 3">
+<meta property="og:description" content="They call it a scam. We call it home. Sign up, get your code, show up.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0b0b0b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,37 +17,52 @@
 <body>
 <div class="page">
 
-<header class="nav">
-  <div class="progress" aria-hidden="true"></div>
-  <div class="wrap nav-inner">
-    <a href="#top" class="logo">MISFITS<span class="acc">.</span></a>
-    <nav class="links">
-      <a href="#manifesto">Manifesto</a>
-      <a href="#wall">The Wall</a>
-      <a href="#join" class="btn btn-sm">Join</a>
-    </nav>
-  </div>
+<header class="wrap nav in">
+  <span class="logo">MISFITS<span class="acc">.</span></span>
+  <span class="tag"><span class="dot" aria-hidden="true"></span>NYC · DEC 3</span>
 </header>
 
-<section id="top" class="wrap hero">
+<main class="wrap hero">
   <div class="hero-copy">
-    <p class="kicker in">A protest against the crypto stigma</p>
-    <h1 class="in" style="animation-delay:.12s">They call it a scam.<br>We call it <span class="acc">home.</span></h1>
-    <p class="lead in" style="animation-delay:.24s">To normies, everyone in crypto is a scammer. Fine. We're the misfits — and we're done apologising for it.</p>
-    <div class="ctas in" style="animation-delay:.36s">
-      <a href="#join" class="btn">I'm a Misfit</a>
-      <a href="#wall" class="btn btn-ghost">See the Wall →</a>
+    <p class="kicker in">The first Misfits protest</p>
+    <h1 class="in" style="animation-delay:.1s">December 3.<br>New York.<br><span class="acc">Misfits</span> take the street.</h1>
+    <p class="lead in" style="animation-delay:.2s">They call crypto a scam and everyone in it a scammer. We're done hiding. Sign up, get your personal code, and show it at check-in on the day.</p>
+
+    <div class="countdown in" style="animation-delay:.3s" aria-label="Time until the protest">
+      <div><b id="cd-d">--</b><span>days</span></div>
+      <div><b id="cd-h">--</b><span>hrs</span></div>
+      <div><b id="cd-m">--</b><span>min</span></div>
+      <div><b id="cd-s">--</b><span>sec</span></div>
     </div>
   </div>
-  <div class="hero-media in" style="animation-delay:.3s">
-    <!-- HERO PHOTO: replace this div with <img src="images/hero.jpg" alt="A misfit in the wild" class="hero-img par"> -->
-    <div class="ph par hero-ph">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg>
-      <strong>[HERO PHOTO]</strong>
-      <span>A misfit in the wild · 4:5</span>
+
+  <div class="card in" style="animation-delay:.25s">
+    <form id="signup" novalidate>
+      <h2>Get your code</h2>
+      <p class="muted">One code per misfit. You'll need it to get in.</p>
+      <label for="email">Email</label>
+      <div class="field">
+        <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        <button type="submit" class="btn" id="submit">Sign up</button>
+      </div>
+      <p class="err" id="err" role="alert"></p>
+    </form>
+
+    <div id="ticket" class="ticket" hidden>
+      <p class="kicker">You're in, misfit</p>
+      <p class="code-label">Your entry code</p>
+      <p class="code" id="code">MSF-0000-0000</p>
+      <button type="button" class="btn btn-ghost" id="copy">Copy code</button>
+      <p class="muted small">Screenshot this. Show it at check-in on December 3. Sent for <span id="ticket-email"></span>.</p>
     </div>
+
+    <dl class="details">
+      <div><dt>Date</dt><dd>Thu, December 3</dd></div>
+      <div><dt>Time</dt><dd>[TIME]</dd></div>
+      <div><dt>Where</dt><dd>[MEETING POINT], NYC</dd></div>
+    </dl>
   </div>
-</section>
+</main>
 
 <div class="ticker" aria-hidden="true">
   <div class="track">
@@ -56,49 +71,23 @@
   </div>
 </div>
 
-<section id="manifesto" class="wrap manifesto">
-  <p class="kicker rv">The manifesto</p>
-  <p class="statement"><span class="w">Normies</span> <span class="w">call</span> <span class="w">crypto</span> <span class="w">a</span> <span class="w">scam</span> <span class="w">and</span> <span class="w">everyone</span> <span class="w">in</span> <span class="w">it</span> <span class="w">a</span> <span class="w">scammer.</span> <span class="w">We're</span> <span class="w">builders,</span> <span class="w">artists,</span> <span class="w">degens</span> <span class="w">and</span> <span class="w">devs.</span> <span class="w hl">We're</span> <span class="w hl">the</span> <span class="w hl">misfits</span> <span class="w">—</span> <span class="w">and</span> <span class="w">we're</span> <span class="w">done</span> <span class="w">hiding.</span></p>
-  <div class="pillars">
-    <div class="pillar rv"><span class="num">01</span><h3>We don't fit. On purpose.</h3><p>Every new idea looks weird before it looks obvious.</p></div>
-    <div class="pillar rv"><span class="num">02</span><h3>Crypto people are people.</h3><p>Being in crypto doesn't make anyone a scammer.</p></div>
-    <div class="pillar rv"><span class="num">03</span><h3>Show your face.</h3><p>Stigma dies when people see who's behind the wallets.</p></div>
+<section class="wrap irl">
+  <p class="kicker rv">Misfits IRL</p>
+  <!-- PHOTOS: replace each .ph div with <img src="images/misfit-1.jpg" alt="@handle"> -->
+  <div class="strip">
+    <figure class="pp" style="--tilt:-2deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b></figcaption></figure>
+    <figure class="pp" style="--tilt:1.5deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b></figcaption></figure>
+    <figure class="pp" style="--tilt:-1deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b></figcaption></figure>
+    <figure class="pp" style="--tilt:2deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b></figcaption></figure>
   </div>
 </section>
 
-<section id="wall" class="wrap wall">
-  <div class="wall-head rv">
-    <h2>The Wall</h2>
-    <p>Real misfits, real life. Every photo is someone who stopped hiding they're in crypto.</p>
-  </div>
-  <!-- WALL PHOTOS: in each card, replace the .ph div with <img src="images/misfit-1.jpg" alt="@handle"> and fill in the handle + city. Copy a card to add more. -->
-  <div class="grid">
-    <div class="pp"><figure style="--tilt:-2deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-    <div class="pp"><figure style="--tilt:1.5deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-    <div class="pp"><figure style="--tilt:-1deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-    <div class="pp"><figure style="--tilt:2.5deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-    <div class="pp"><figure style="--tilt:1deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-    <div class="pp"><figure style="--tilt:-2.5deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-    <div class="pp"><figure style="--tilt:2deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-    <div class="pp"><figure style="--tilt:-1.5deg"><div class="ph"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7h4l2-3h6l2 3h4v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>[MISFIT IRL PHOTO]</span></div><figcaption><b>[@handle]</b><span>[city]</span></figcaption></figure></div>
-  </div>
-</section>
-
-<section id="join" class="join">
-  <div class="wrap join-inner">
-    <h2 class="rv">Get on the <span class="acc">wall.</span></h2>
-    <p class="rv">Snap your misfit self IRL, post it with <strong>[#HASHTAG]</strong>, tag <strong>[@X_HANDLE]</strong> — and you're in.</p>
-    <div class="ctas rv">
-      <a href="#" class="btn">Post on X</a>
-      <a href="#" class="btn btn-ghost">Join the Telegram</a>
-    </div>
-    <footer class="foot">
-      <span class="logo logo-sm">MISFITS<span class="acc">.</span></span>
-      <span>Not a scam. Just misfits.</span>
-    </footer>
-  </div>
-</section>
+<footer class="wrap foot">
+  <span class="logo logo-sm">MISFITS<span class="acc">.</span></span>
+  <span>Not a scam. Just misfits.</span>
+</footer>
 
 </div>
+<script src="app.js"></script>
 </body>
 </html>

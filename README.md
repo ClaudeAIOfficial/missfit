@@ -2,21 +2,25 @@
 
 > They call it a scam. We call it home.
 
-Landing page for the Misfits movement — a protest against the stigma of being in crypto.
+One-page site for the first Misfits protest — **New York, December 3**. People sign up with their email and get a random entry code (e.g. `MSF-7KQ2-XW9P`) to show at check-in.
 
-Plain static site: `index.html` + `styles.css`. No build step. Deploy as-is to GitHub Pages, Vercel, Netlify or any static host.
+Plain static site: `index.html` + `styles.css` + `app.js`. No build step. Deploy as-is to GitHub Pages, Vercel, Netlify or any static host.
 
-## Adding misfit photos
+## Before going live: connect signups
 
-1. Drop photos in `images/`.
-2. **Hero:** in `index.html`, replace the `.hero-ph` div with
-   `<img src="images/hero.jpg" alt="A misfit in the wild" class="hero-img par">` (4:5 portrait works best).
-3. **The Wall:** in each card, replace the `.ph` div with `<img src="images/misfit-1.jpg" alt="@handle">` and fill in the handle and city. Copy a card to add more.
+The site is static, so it can't store signups by itself. Without this step people still see a code, but you have no list to check it against.
+
+1. Create a free form at [formspree.io](https://formspree.io) (or any service that accepts a JSON POST).
+2. Paste its endpoint into `FORM_ENDPOINT` at the top of `app.js`.
+3. Every signup arrives as `{ email, code }`. Export that list and check codes against it at the door.
+
+Codes are generated in the browser, so one person could sign up with several emails. If that matters, dedupe by email in your export.
 
 ## Placeholders to fill in
 
-- `[#HASHTAG]` and `[@X_HANDLE]` in the Join section
-- `href="#"` on the **Post on X** and **Join the Telegram** buttons
+- `[TIME]` and `[MEETING POINT]` in the details box (`index.html`)
+- `PROTEST_START` in `app.js` (drives the countdown — currently noon NYC time)
+- Misfit IRL photos: drop them in `images/` and replace each `.ph` div with `<img src="images/misfit-1.jpg" alt="@handle">`
 
 ## Accent colour
 
