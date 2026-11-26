@@ -19,7 +19,7 @@ Codes are generated in the browser, so one person could sign up with several ema
 ## Placeholders to fill in
 
 - Social links (`href="#"`) in the footer
-- Misfit IRL photos: drop them in `images/` and replace each `.ph` div with `<img src="images/misfit-1.jpg" alt="@handle">`
+- More IRL photos: drop them in `images/` and copy a `<figure>` in the Misfits IRL section
 
 ## Look
 
