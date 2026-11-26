@@ -99,3 +99,15 @@ document.getElementById("copy").addEventListener("click", async (e) => {
     setTimeout(() => (e.target.textContent = "Copy code"), 1800);
   } catch {}
 });
+
+// Copy donation wallet addresses
+document.querySelectorAll("[data-copy]").forEach((b) => {
+  b.addEventListener("click", async () => {
+    const text = document.getElementById(b.dataset.copy).textContent.trim();
+    try {
+      await navigator.clipboard.writeText(text);
+      b.textContent = "Copied ✓";
+      setTimeout(() => (b.textContent = "Copy"), 1800);
+    } catch {}
+  });
+});
