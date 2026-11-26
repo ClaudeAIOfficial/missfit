@@ -17,7 +17,6 @@ Plain static site: `index.html` + `styles.css`. No build step. Deploy as-is to G
 
 - `[#HASHTAG]` and `[@X_HANDLE]` in the Join section
 - `href="#"` on the **Post on X** and **Join the Telegram** buttons
-- `CA: [CONTRACT ADDRESS]` in the footer
 
 ## Accent colour
 
