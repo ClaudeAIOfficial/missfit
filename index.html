@@ -8,10 +8,12 @@
 <meta property="og:title" content="MISFITS — Judge the person, not the wallet.">
 <meta property="og:description" content="First action: New York, December 3. Sign up, get your code, show up.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0b0b0b">
+<meta name="theme-color" content="#e8232a">
+<link rel="icon" href="images/mascot.png">
+<meta property="og:image" content="images/mascot.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,7 +22,7 @@
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <a href="#top" class="logo">MISFITS<span class="acc">.</span></a>
+    <a href="#top" class="logo"><img src="images/mascot.png" alt="" width="40" height="40">MISFITS<span class="acc">.</span></a>
     <nav class="links" aria-label="Main">
       <a href="#about">About</a>
       <a href="#demands">Demands</a>
@@ -37,17 +39,19 @@
 <!-- HERO -->
 <section class="hero">
   <div class="wrap hero-inner">
-    <p class="kicker in">The movement against the crypto stigma</p>
-    <h1 class="in" style="animation-delay:.1s">Judge the person.<br><span class="acc">Not the wallet.</span></h1>
-    <p class="lead in" style="animation-delay:.2s">Millions of people build, create and work in crypto. Most of the world still calls them scammers. We are the misfits — and we're standing up together.</p>
-    <div class="ctas in" style="animation-delay:.3s">
-      <a href="#action" class="btn">Join the NYC action</a>
-      <a href="#about" class="btn btn-ghost">Why we march</a>
+    <div class="hero-copy">
+      <p class="kicker in">The movement against the crypto stigma</p>
+      <h1 class="in" style="animation-delay:.1s">Judge the person.<br><span class="swipe">Not the wallet.</span></h1>
+      <p class="lead in" style="animation-delay:.2s">Millions of people build, create and work in crypto. Most of the world still calls them scammers. We are the misfits — and we're standing up together.</p>
+      <div class="ctas in" style="animation-delay:.3s">
+        <a href="#action" class="btn">Join the NYC action</a>
+        <a href="#about" class="btn btn-ghost">Why we march</a>
+      </div>
     </div>
-  </div>
-  <!-- HERO PHOTO: replace this div with <img src="images/hero.jpg" alt="Misfits gathering" class="hero-img"> -->
-  <div class="wrap">
-    <div class="ph ph-dark hero-ph rv"><strong>[HERO PHOTO]</strong><span>Wide crowd / group shot of misfits · 21:9</span></div>
+    <div class="hero-mascot in" style="animation-delay:.2s">
+      <div class="sticker">Not a<br>scam!</div>
+      <img src="images/mascot.png" alt="The Misfits mascot holding a red paint roller" width="400" height="400">
+    </div>
   </div>
 </section>
 
@@ -75,7 +79,7 @@
 <!-- DEMANDS -->
 <section id="demands" class="section section-accent">
   <div class="wrap">
-    <p class="kicker kicker-dark rv">What we stand for</p>
+    <p class="kicker kicker-light rv">What we stand for</p>
     <h2 class="rv">Our demands</h2>
     <ol class="demands">
       <li class="rv"><span>01</span><div><h3>End the stigma.</h3><p>Stop treating everyone in crypto as a scammer by default.</p></div></li>
@@ -117,6 +121,7 @@
         <p class="err" id="err" role="alert"></p>
       </form>
       <div id="ticket" class="ticket" hidden>
+        <img src="images/mascot.png" alt="" class="ticket-mascot" width="96" height="96">
         <p class="kicker">You're in, misfit</p>
         <p class="code-label">Your entry code</p>
         <p class="code" id="code">MSF-0000-0000</p>
@@ -179,7 +184,7 @@
 <footer class="foot">
   <div class="wrap foot-inner">
     <div class="foot-brand">
-      <span class="logo">MISFITS<span class="acc">.</span></span>
+      <span class="logo"><img src="images/mascot.png" alt="" width="40" height="40">MISFITS<span class="acc">.</span></span>
       <p class="muted">A peaceful movement against the crypto stigma.</p>
     </div>
     <nav class="foot-links" aria-label="Social">

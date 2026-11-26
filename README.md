@@ -22,9 +22,8 @@ Codes are generated in the browser, so one person could sign up with several ema
 - `PROTEST_START` in `app.js` (drives the countdown — currently noon NYC time)
 - `[#HASHTAG]` in Get involved and Misfits IRL
 - Social links (`href="#"`) in Get involved and the footer
-- Hero photo: replace the `.hero-ph` div with `<img src="images/hero.jpg" alt="Misfits gathering" class="hero-img">` (wide 21:9 crowd shot)
 - Misfit IRL photos: drop them in `images/` and replace each `.ph` div with `<img src="images/misfit-1.jpg" alt="@handle">`
 
-## Accent colour
+## Look
 
-Change `--accent` at the top of `styles.css`.
+The theme follows the mascot (`images/mascot.png`): white paper, thick black ink, red paint. Colours live at the top of `styles.css` (`--red`, `--ink`, `--paper`).
