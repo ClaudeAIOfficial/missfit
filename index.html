@@ -3,197 +3,112 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MISFITS — The movement against the crypto stigma</title>
-<meta name="description" content="Misfits is a movement against the discrimination of crypto people. First action: New York, December 3. Sign up and get your entry code.">
-<meta property="og:title" content="MISFITS — Judge the person, not the wallet.">
-<meta property="og:description" content="First action: New York, December 3. Sign up, get your code, show up.">
+<title>Misfits — Judge the person, not the wallet.</title>
+<meta name="description" content="Misfits is a peaceful movement against the crypto stigma. First action: New York City, December 3.">
+<meta property="og:title" content="Misfits — Judge the person, not the wallet.">
+<meta property="og:description" content="First action: New York City, December 3. Sign up and get your entry code.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#e8232a">
-<link rel="icon" href="images/mascot.png">
 <meta property="og:image" content="images/mascot.png">
+<meta name="theme-color" content="#fafaf8">
+<link rel="icon" href="images/mascot.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<a href="#action" class="announce"><span class="dot" aria-hidden="true"></span>First action: New York City · December 3 — <u>Sign up for your entry code</u></a>
-
-<header class="nav">
-  <div class="wrap nav-inner">
-    <a href="#top" class="logo"><img src="images/mascot.png" alt="" width="40" height="40">MISFITS<span class="acc">.</span></a>
-    <nav class="links" aria-label="Main">
-      <a href="#about">About</a>
-      <a href="#demands">Demands</a>
-      <a href="#action">NYC Action</a>
-      <a href="#involved">Get involved</a>
-      <a href="#faq">FAQ</a>
-    </nav>
-    <a href="#action" class="btn btn-sm">Join</a>
-  </div>
+<header class="wrap nav">
+  <a href="#top" class="logo"><img src="images/mascot.png" alt="" width="32" height="32">Misfits</a>
+  <nav class="links" aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#action">NYC</a>
+    <a href="#faq">FAQ</a>
+  </nav>
 </header>
 
 <main id="top">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <p class="kicker in">The movement against the crypto stigma</p>
-      <h1 class="in" style="animation-delay:.1s">Judge the person.<br><span class="swipe">Not the wallet.</span></h1>
-      <p class="lead in" style="animation-delay:.2s">Millions of people build, create and work in crypto. Most of the world still calls them scammers. We are the misfits — and we're standing up together.</p>
-      <div class="ctas in" style="animation-delay:.3s">
-        <a href="#action" class="btn">Join the NYC action</a>
-        <a href="#about" class="btn btn-ghost">Why we march</a>
+<section class="wrap hero">
+  <p class="meta in"><span class="dot" aria-hidden="true"></span>New York City · December 3</p>
+  <h1 class="in" style="animation-delay:.08s">Judge the person.<br><span class="soft">Not the wallet.</span></h1>
+  <p class="lead in" style="animation-delay:.16s">A peaceful movement against the crypto stigma. They call us scammers. We call ourselves misfits.</p>
+  <a href="#action" class="btn in" style="animation-delay:.24s">Get your entry code <span aria-hidden="true">→</span></a>
+  <img class="mascot in" style="animation-delay:.3s" src="images/mascot.png" alt="The Misfits mascot" width="400" height="400">
+</section>
+
+<section id="about" class="wrap section rows">
+  <p class="label rv">About</p>
+  <div class="rv">
+    <p class="big">Say you work in crypto and watch the room change. Misfits is for everyone who's done hiding it — builders, artists, traders, devs. We don't ask anyone to buy anything. We ask to be treated like people.</p>
+  </div>
+
+  <p class="label rv">We stand for</p>
+  <ol class="list">
+    <li class="rv"><span>01</span>End the stigma.</li>
+    <li class="rv"><span>02</span>Judge the person, not the wallet.</li>
+    <li class="rv"><span>03</span>A seat at the table.</li>
+  </ol>
+</section>
+
+<section id="action" class="wrap section rows">
+  <p class="label rv">First action</p>
+  <div class="action rv">
+    <h2>New York City.<br>December 3.</h2>
+    <dl class="details">
+      <div><dt>Time</dt><dd>[TIME]</dd></div>
+      <div><dt>Where</dt><dd>[MEETING POINT]</dd></div>
+      <div><dt>Starts in</dt><dd class="countdown" aria-label="Time until the action"><span id="cd-d">--</span>d <span id="cd-h">--</span>h <span id="cd-m">--</span>m <span id="cd-s">--</span>s</dd></div>
+    </dl>
+
+    <form id="signup" class="signup" novalidate>
+      <label for="email">Sign up to get your personal entry code. You'll show it at check-in.</label>
+      <div class="field">
+        <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
+        <button type="submit" class="btn" id="submit">Sign up</button>
       </div>
-    </div>
-    <div class="hero-mascot in" style="animation-delay:.2s">
-      <div class="sticker">Not a<br>scam!</div>
-      <img src="images/mascot.png" alt="The Misfits mascot holding a red paint roller" width="400" height="400">
+      <p class="err" id="err" role="alert"></p>
+    </form>
+
+    <div id="ticket" class="ticket" hidden>
+      <p class="label">Your entry code</p>
+      <p class="code" id="code">MSF-0000-0000</p>
+      <p class="muted">Screenshot it and show it on December 3. Registered to <span id="ticket-email"></span>. <button type="button" class="linkbtn" id="copy">Copy code</button></p>
     </div>
   </div>
 </section>
 
-<div class="ticker" aria-hidden="true">
-  <div class="track">
-    <span><s>"It's all a scam"</s></span><i>✕</i><span><s>"Get a real job"</s></span><i>✕</i><span><s>"Magic internet money"</s></span><i>✕</i><span><s>"It's a ponzi"</s></span><i>✕</i><span><s>"Touch grass"</s></span><i>✕</i>
-    <span><s>"It's all a scam"</s></span><i>✕</i><span><s>"Get a real job"</s></span><i>✕</i><span><s>"Magic internet money"</s></span><i>✕</i><span><s>"It's a ponzi"</s></span><i>✕</i><span><s>"Touch grass"</s></span><i>✕</i>
-  </div>
-</div>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="wrap split">
-    <div class="rv">
-      <p class="kicker">Who we are</p>
-      <h2>Being a misfit<br>is the badge.</h2>
-    </div>
-    <div class="prose rv">
-      <p>Say you work in crypto and watch the room change. You're a gambler, a grifter, a joke. Whole careers, communities and friendships get written off with one word: <em>scam</em>.</p>
-      <p>Misfits started as a meme and became a movement. Builders, artists, traders, devs, students and parents who are done hiding what they do. We don't ask anyone to buy anything. We ask to be treated like people.</p>
-    </div>
+<section class="wrap section rows">
+  <p class="label rv">Misfits IRL</p>
+  <!-- PHOTOS: replace each .ph div with <img src="images/misfit-1.jpg" alt="@handle"> -->
+  <div class="grid">
+    <figure class="rv"><div class="ph">[PHOTO]</div><figcaption>[@handle]</figcaption></figure>
+    <figure class="rv"><div class="ph">[PHOTO]</div><figcaption>[@handle]</figcaption></figure>
+    <figure class="rv"><div class="ph">[PHOTO]</div><figcaption>[@handle]</figcaption></figure>
+    <figure class="rv"><div class="ph">[PHOTO]</div><figcaption>[@handle]</figcaption></figure>
   </div>
 </section>
 
-<!-- DEMANDS -->
-<section id="demands" class="section section-accent">
-  <div class="wrap">
-    <p class="kicker kicker-light rv">What we stand for</p>
-    <h2 class="rv">Our demands</h2>
-    <ol class="demands">
-      <li class="rv"><span>01</span><div><h3>End the stigma.</h3><p>Stop treating everyone in crypto as a scammer by default.</p></div></li>
-      <li class="rv"><span>02</span><div><h3>Judge the person, not the wallet.</h3><p>At work, at the bank, at the dinner table — what you hold says nothing about who you are.</p></div></li>
-      <li class="rv"><span>03</span><div><h3>Give us a seat at the table.</h3><p>Talk with crypto people, not just about them.</p></div></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ACTION -->
-<section id="action" class="section">
-  <div class="wrap action">
-    <div class="action-copy rv">
-      <p class="kicker">Upcoming action</p>
-      <h2>NYC.<br>December 3.</h2>
-      <p class="lead">The first Misfits protest. Sign up with your email and you'll get a personal entry code. Show it at check-in on the day.</p>
-      <div class="countdown" aria-label="Time until the action">
-        <div><b id="cd-d">--</b><span>days</span></div>
-        <div><b id="cd-h">--</b><span>hrs</span></div>
-        <div><b id="cd-m">--</b><span>min</span></div>
-        <div><b id="cd-s">--</b><span>sec</span></div>
-      </div>
-      <dl class="details">
-        <div><dt>Date</dt><dd>Thursday, December 3</dd></div>
-        <div><dt>Time</dt><dd>[TIME]</dd></div>
-        <div><dt>Where</dt><dd>[MEETING POINT], New York City</dd></div>
-      </dl>
-    </div>
-
-    <div class="card rv">
-      <form id="signup" novalidate>
-        <h3>Get your entry code</h3>
-        <p class="muted">One code per misfit. You'll need it to check in.</p>
-        <label for="email">Email</label>
-        <div class="field">
-          <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email" required>
-          <button type="submit" class="btn" id="submit">Sign up</button>
-        </div>
-        <p class="err" id="err" role="alert"></p>
-      </form>
-      <div id="ticket" class="ticket" hidden>
-        <img src="images/mascot.png" alt="" class="ticket-mascot" width="96" height="96">
-        <p class="kicker">You're in, misfit</p>
-        <p class="code-label">Your entry code</p>
-        <p class="code" id="code">MSF-0000-0000</p>
-        <button type="button" class="btn btn-ghost" id="copy">Copy code</button>
-        <p class="muted small">Screenshot this and show it at check-in on December 3. Registered to <span id="ticket-email"></span>.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GET INVOLVED -->
-<section id="involved" class="section section-line">
-  <div class="wrap">
-    <p class="kicker rv">Get involved</p>
-    <h2 class="rv">Three ways to stand up</h2>
-    <div class="ways">
-      <a href="#action" class="way rv"><span class="num">01</span><h3>Show up</h3><p>Sign up for the NYC action and bring your code on December 3.</p><span class="arrow">Get your code →</span></a>
-      <a href="#" class="way rv"><span class="num">02</span><h3>Spread the word</h3><p>Share the movement. Every misfit who sees it is one less who feels alone.</p><span class="arrow">Share on X →</span></a>
-      <a href="#" class="way rv"><span class="num">03</span><h3>Show your face</h3><p>Post a photo of your misfit self IRL with <b>[#HASHTAG]</b>. Stigma dies when people see who we are.</p><span class="arrow">Post your photo →</span></a>
-    </div>
-  </div>
-</section>
-
-<!-- IRL -->
-<section class="section section-line">
-  <div class="wrap">
-    <div class="irl-head rv">
-      <h2>Misfits IRL</h2>
-      <p class="muted">Real people, real lives. Post yours with <b>[#HASHTAG]</b>.</p>
-    </div>
-    <!-- PHOTOS: replace each .ph div with <img src="images/misfit-1.jpg" alt="@handle"> -->
-    <div class="strip">
-      <figure class="pp" style="--tilt:-2deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption>[@handle]</figcaption></figure>
-      <figure class="pp" style="--tilt:1.5deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption>[@handle]</figcaption></figure>
-      <figure class="pp" style="--tilt:-1deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption>[@handle]</figcaption></figure>
-      <figure class="pp" style="--tilt:2deg"><div class="ph"><span>[MISFIT IRL PHOTO]</span></div><figcaption>[@handle]</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section id="faq" class="section section-line">
-  <div class="wrap split">
-    <div class="rv">
-      <p class="kicker">FAQ</p>
-      <h2>Questions</h2>
-    </div>
-    <div class="faq rv">
-      <details><summary>What is the entry code for?</summary><p>It's how we check people in on the day. Sign up with your email, keep the code, and show it at the meeting point.</p></details>
-      <details><summary>Can I bring friends?</summary><p>Yes — but every person needs their own code. Send them this page.</p></details>
-      <details><summary>Do I need to own crypto to join?</summary><p>No. If you believe people shouldn't be written off for being in crypto, you're a misfit.</p></details>
-      <details><summary>Is this a token or a sale?</summary><p>No. Misfits is a movement. We will never ask you to buy anything to take part.</p></details>
-      <details><summary>Is the protest peaceful?</summary><p>Yes. Misfits is a peaceful movement. Respect the city, the police and each other.</p></details>
-    </div>
+<section id="faq" class="wrap section rows">
+  <p class="label rv">FAQ</p>
+  <div class="faq rv">
+    <details><summary>What is the entry code for?</summary><p>It's how we check people in. Sign up, keep the code, show it at the meeting point.</p></details>
+    <details><summary>Can I bring friends?</summary><p>Yes. Everyone needs their own code — send them this page.</p></details>
+    <details><summary>Do I need to own crypto?</summary><p>No. If you think people shouldn't be written off for being in crypto, you're a misfit.</p></details>
+    <details><summary>Is this a token or a sale?</summary><p>No. Misfits is a movement. We will never ask you to buy anything to take part.</p></details>
+    <details><summary>Is it peaceful?</summary><p>Yes. Respect the city, the police and each other.</p></details>
   </div>
 </section>
 
 </main>
 
-<footer class="foot">
-  <div class="wrap foot-inner">
-    <div class="foot-brand">
-      <span class="logo"><img src="images/mascot.png" alt="" width="40" height="40">MISFITS<span class="acc">.</span></span>
-      <p class="muted">A peaceful movement against the crypto stigma.</p>
-    </div>
-    <nav class="foot-links" aria-label="Social">
-      <a href="#">X / Twitter</a>
-      <a href="#">Telegram</a>
-      <a href="#">Instagram</a>
-    </nav>
-  </div>
-  <div class="wrap foot-base"><span>© 2026 Misfits</span><span>Not a scam. Just misfits.</span></div>
+<footer class="wrap foot">
+  <span>© 2026 Misfits</span>
+  <nav class="links" aria-label="Social">
+    <a href="#">X</a>
+    <a href="#">Telegram</a>
+    <a href="#">Instagram</a>
+  </nav>
 </footer>
 
 <script src="app.js"></script>
